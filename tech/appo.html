@@ -1,0 +1,142 @@
+<DOCTYPE! html>
+  <head>
+        
+            
+    <title>Book appointment</title>
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+    <!--My additional bootstrap-->
+    <link rel="stylesheet" th:href="@{/css/appointcss.css}" type="text/css"/>
+    <!--css-->
+    <link href="css/login.css" rel="stylesheet" type="text/css"  media="all" />
+
+  </head>
+    <body>
+<div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="well-block">
+                        <div class="well-title">
+                            <h2>Patient Appointment Form</h2>
+                        </div>
+                        <form>
+                            <!-- Form start: Clinet Name -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name">Name</label>
+                                        <input id="name" name="name" type="text" placeholder=" Client Name" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Text input: Client Email-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">Email</label>
+                                        <input id="email" name="email" type="text" placeholder=" Client E-Mail" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Text input: Date-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="date">Preferred Date</label>
+                                        <input id="date" name="date" type="text" placeholder="Preferred Date" class="form-control input-md">
+                                     
+                                </div>
+                                <!-- Select Time -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="time">Preferred Time</label>
+                                        <select id="time" name="time" class="form-control">
+                                            <option value="8:00 to 9:00">8:00am to 9:00am</option>
+                                            <option value="9:00 to 10:00">9:00am to 10:00am</option>
+                                            <option value="10:00 to 1:00">10:00am to 11:00am</option>
+                                            <option value="10:00 to 1:00">11:00am to 12:00am</option>
+                                            <option value="10:00 to 1:00">1:00pm to 4:00pm</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                  <!--Select Location -->
+                                   <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="time">Preferred Location</label>
+                                        <select id="time" name="time" class="form-control">
+                                            <option value="Montgomery">Nairobi County</option>
+                                            <option value="Fredrick">Kiambu County</option>
+                                            <option value="Prince George">Machakos County</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Select Trainer -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="appointmentfor">Appointment For</label>
+                                        <select id="appointmentfor" name="appointmentfor" class="form-control">
+                                            <option value="Service#1">Therapy</option>
+                                            <option value="Service#2">Physician</option>
+                                            <option value="Service#3">Cardiologist</option>
+                                            <option value="Service#4">Neurologist</option>
+                                          <option value="Service#5">Orthopedic</option>
+                                          <option value="Service#6">Pediatric</option>
+                                          <option value="Service#7">Eurologist</option>
+                                          
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <button id="singlebutton" name="singlebutton" class="btn btn-default">Make An Appointment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- form end -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="well-block">
+                        <div class="well-title">
+                            <h2>Why Appointment with Us</h2>
+                        </div>
+                        <div class="feature-block">
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">24/7 Hours Available</h4>
+                                <div class="feature-content">
+                                    <p>SDG hospital operates 24/7</p>
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Experienced Doctors Available</h4>
+                                <div class="feature-content">
+                                    <p>Meet our hardest working Doctors to acquire reliable mental and physical health services. </p>
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Low Price & Fees</h4>
+                                <div class="feature-content">
+                                    <p>Start with a one trial and sign-up for our membership, starting at $10 per month.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5ec136ab967ae56c521a93dc/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+        
+    </body>
+    </html>

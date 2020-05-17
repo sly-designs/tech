@@ -1,0 +1,22 @@
+.well-block {
+  
+    border: 1px solid #e9e6e8;
+    padding: 40px;
+    background:url(../images/bold.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.well-title {
+    margin-bottom: 40px;
+}
+.header {
+    color: #848484;
+}
+body {
+   
+    background:url(../images/3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
